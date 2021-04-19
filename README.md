@@ -204,10 +204,10 @@ pyats create testbed file --path SampleTestbedFile.xlsx --output my_testbed.yaml
 ---
 Ensure SSH connectivity at from your host's CLI, and run the pyATS job:
 
-Cisco IOS-XE:
+To run Magic Carpet:
 
 ```console
-pyats run job IOS_XE_magic_carpet_job.py --testbed-file testbed/testbed_ios_xe.yaml
+pyats run job magic_carpet.py --testbed-file testbed/testbed.yaml
 ```
 
 Cisco DevNet Sandbox for CSR1000v (see more [here](docs/01_devnetsb.md))
@@ -216,17 +216,6 @@ Cisco DevNet Sandbox for CSR1000v (see more [here](docs/01_devnetsb.md))
 pyats run job DevNet_Sandbox_CSR_magic_carpet_job.py --testbed-file testbed/testbed_DevNet_CSR1000v_Sandbox.yaml
 ```
 
-JunOS 17 / 18 / 19:
-
-```console
-pyats run job JUNOS_magic_carpet_job.py --testbed-file testbed/testbed_juniper.yaml
-```
-
-F5 BIG-IP:
-
-```console
-python3 F5_magic_carpet.py
-```
 
 First - you will get onto the Magic Carpet
 

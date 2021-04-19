@@ -1,0 +1,90 @@
+
+<html><body>
+<h1>Show Access-Lists</h1>
+<table style="width:100%">
+  <tr>
+    <th>Access Control List</th>
+    <th>Access Control Entry</th>
+    <th>Permission</th>
+    <th>Logging</th>
+    <th>Source Network</th>
+    <th>Destination Network</th>
+    <th>L3 Protocol</th>
+    <th>L4 Protocol</th>
+    <th>Operator</th>
+    <th>Port</th>
+  </tr>
+  <tr>
+    <td>IPvZero</td>
+    <td>10</td>
+    <td>permit</td>
+    <td>log-none</td>
+    <td>any</td>
+    <td>any any</td>
+    <td>icmp</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+  </tr>
+  <tr>
+    <td>IPvZero</td>
+    <td>20</td>
+    <td>deny</td>
+    <td>log-none</td>
+    <td>any</td>
+    <td>host 8.8.8.8 host 8.8.8.8</td>
+    <td>tcp</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+  </tr>
+  <tr>
+    <td>IPvZero</td>
+    <td>30</td>
+    <td>permit</td>
+    <td>log-none</td>
+    <td>any</td>
+    <td>any any</td>
+    <td>ipv4</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+  </tr>
+  <tr>
+    <td>meraki-fqdn-dns</td>
+    <td>No ACEs</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+  </tr>
+  <tr>
+    <td>IPvZero</td>
+    <td>20</td>
+    <td>deny</td>
+    <td>log-none</td>
+    <td>N/A</td>
+    <td>Destination Protocol</td>
+    <td>N/A</td>    
+    <td>TCP</td>
+    <td>eq</td>
+    <td>22</td>
+  </tr>
+  <tr>
+    <td>meraki-fqdn-dns</td>
+    <td>No ACEs</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+  </tr>
+</table>
+</body></html>

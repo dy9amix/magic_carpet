@@ -1,0 +1,4 @@
+Interface,Description,Type,Connected,Enabled,Bandwidth,Port Speed,Port Duplex,IPv4 Address,Line Protocol,Operational Status,MAC Address,Media Type,Delay,Encapsulation,Keepalive,MTU,Port Channel Member,Port Channel Member Interface,Input CRC Errors,Input Errors,Output Errors,Input Packets,Output Packets,QoS Strategy,Input Queue Drops,Total Output Drops
+GigabitEthernet1,MANAGEMENT INTERFACE - DON'T TOUCH ME,CSR vNIC,Not Connected,True,1000000,1000mbps,full,No IP Address,up,up,0050.56bf.78ac,Virtual,10,arpa,10,1500,False,Stand Alone Port,0,0,0,7335,8317,fifo,0,0
+GigabitEthernet2,Network Interface,CSR vNIC,Not Connected,False,1000000,1000mbps,full,No IP Address,down,down,0050.56bf.4ea3,Virtual,10,arpa,10,1500,False,Stand Alone Port,0,0,0,5,0,fifo,0,0
+GigabitEthernet3,Network Interface,CSR vNIC,Not Connected,False,1000000,1000mbps,full,No IP Address,down,down,0050.56bf.7db4,Virtual,10,arpa,10,1500,False,Stand Alone Port,0,0,0,0,0,fifo,0,0

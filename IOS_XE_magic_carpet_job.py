@@ -7,6 +7,8 @@ $ pyats run job IOS_XE_magic_carpet_job.py --testbed-file testbed/testbed_ios_xe
 
 import os
 from genie.testbed import load
+from ascii_art import GREETING, RUNNING, FINISHED
+import pyinputplus as pyip
 
 def main(runtime):
 

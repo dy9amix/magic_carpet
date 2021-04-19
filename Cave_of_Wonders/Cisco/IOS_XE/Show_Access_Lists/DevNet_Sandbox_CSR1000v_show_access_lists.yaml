@@ -1,0 +1,69 @@
+!!python/object/new:genie.conf.base.utils.QDict
+dictitems:
+  IPvZero:
+    aces:
+      '10':
+        actions:
+          forwarding: permit
+          logging: log-none
+        matches:
+          l3:
+            ipv4:
+              destination_network:
+                any:
+                  destination_network: any
+              protocol: icmp
+              source_network:
+                any:
+                  source_network: any
+          l4:
+            icmp:
+              established: false
+        name: '10'
+      '20':
+        actions:
+          forwarding: deny
+          logging: log-none
+        matches:
+          l3:
+            ipv4:
+              destination_network:
+                host 8.8.8.8:
+                  destination_network: host 8.8.8.8
+              protocol: tcp
+              source_network:
+                any:
+                  source_network: any
+          l4:
+            tcp:
+              destination_port:
+                operator:
+                  operator: eq
+                  port: 22
+              established: false
+        name: '20'
+      '30':
+        actions:
+          forwarding: permit
+          logging: log-none
+        matches:
+          l3:
+            ipv4:
+              destination_network:
+                any:
+                  destination_network: any
+              protocol: ipv4
+              source_network:
+                any:
+                  source_network: any
+          l4:
+            ipv4:
+              established: false
+        name: '30'
+    acl_type: extended
+    name: IPvZero
+    type: ipv4-acl-type
+  meraki-fqdn-dns:
+    acl_type: extended
+    name: meraki-fqdn-dns
+    type: ipv4-acl-type

@@ -1,0 +1,47 @@
+devices:
+  sbx-n9kv-ao:
+    alias: sbx-n9kv-ao
+    connections:
+      cli:
+        ip: 64.103.37.14
+        port: 8181
+        protocol: ssh
+    credentials:
+      default:
+        password: Admin_1234!
+        username: admin
+    os: nxos
+    platform: n9k
+    type: nexus
+  csr1000v-1:
+      alias: 'DevNet_Sandbox_CSR1000v'
+      type: 'router'
+      os: 'iosxe'
+      platform: csr1000
+      credentials:
+        default:
+          username: developer
+          password: C1sco12345
+      connections:        
+        cli:
+          protocol: ssh
+          ip: 131.226.217.143
+          port: 22
+          arguments:
+            connection_timeout: 360
+  sbx-iosxr1:
+    alias: sbx-iosxr1
+    connections:
+      cli:
+        ip: 64.103.37.3
+        port: 8181
+        protocol: ssh
+    credentials:
+      default:
+        password: C1sco12345
+        username: admin
+    os: iosxr
+    platform: xrv9000
+    type: 'router'
+testbed: {}
+topology: {}
